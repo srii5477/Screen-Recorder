@@ -4,14 +4,15 @@ import cv2
 import keyboard
 import typer
 from rich import print as rprint
+from rich.panel import Panel
 import os
 
 app = typer.Typer()
 
 @app.command("Start")
 def func():
-    rprint("[blink cyan bold] Welcome to ScreenRec 1.0 [/blink cyan bold] [red bold] Press y to get started or q to quit [/red bold]")
-    cmd = input("Enter y to get started: ")
+    rprint(Panel("[blink cyan bold] Welcome to ScreenRec 1.0 [/blink cyan bold] [red bold] Press y to get started or q to quit [/red bold]"))
+    cmd = input("Enter an input: ")
     if cmd == 'q':
         rprint("[magenta bold] Thank you for trying out ScreenRec! [/magenta bold]")
     elif cmd == 'y':
@@ -45,7 +46,7 @@ def func():
             obj.write(frame)
             
             if keyboard.is_pressed('q'):
-                rprint("[magenta bold] Your recording has been saved. Thanks for using ScreenRec! [/magenta bold]")
+                rprint("[magenta bold]Your recording has been saved. Thanks for using ScreenRec! [/magenta bold]")
                 break 
 
         # discard video writer object and close windows   
