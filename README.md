@@ -10,7 +10,9 @@ git clone https://github.com/srii5477/Screen-Recorder
 
 cd over to the Screen-Recorder folder
 
-and run python main.py
+and pip install -r requirements.txt
+
+finally run python main.py
 
 that's la fin.
 
