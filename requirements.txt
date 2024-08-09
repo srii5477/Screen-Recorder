@@ -16,9 +16,6 @@ pyperclip==1.9.0
 PyRect==0.2.0
 PyScreeze==0.1.30
 pytweening==1.2.0
-rich==13.7.1
 shellingham==1.5.4
 six==1.16.0
-typer==0.12.3
-typing_extensions==4.12.2
 wcwidth==0.2.13
